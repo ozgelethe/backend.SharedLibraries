@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
   <Project Path="sample/backend.SharedLibraries.SampleApi/backend.SharedLibraries.SampleApi.csproj" Id="8c27d569-80b6-41b4-866c-51f3f050b917" />
   <Project Path="src/backend.SharedLibraries/backend.SharedLibraries.csproj" />
   <Project Path="test/backend.SharedLibraries.Tests/backend.SharedLibraries.Tests.csproj" Id="aaaff217-0c94-4b62-8fe5-05886777260b" />

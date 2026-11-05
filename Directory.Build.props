@@ -1,0 +1,58 @@
+<Project>
+
+  <!-- Build -->
+  <PropertyGroup>
+
+    <!-- Targets .NET 10 for all projects. -->
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- Uses the latest C# language version. -->
+    <LangVersion>latest</LangVersion>
+
+    <!-- Enables compiler warnings for possible null references. -->
+    <Nullable>enable</Nullable>
+
+    <!-- Adds common using directives automatically. -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Reads all package versions from Directory.Packages.props. -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+
+  </PropertyGroup>
+
+
+  <!-- Code Quality -->
+  <PropertyGroup>
+
+    <!-- Fails the build on any warning. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Enables the recommended set of .NET code analysis rules. -->
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+
+    <!-- Runs code style rules during build, not only in the IDE. -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+  </PropertyGroup>
+
+  <!-- Package Information -->
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Authors>Özge Lethe</Authors>
+    <Copyright>Copyright (c) 2026 Özge Lethe</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ozgelethe/backend.SharedLibraries</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ozgelethe/backend.SharedLibraries</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- CI -->
+  <PropertyGroup Condition="'$(CI)' == 'true'">
+
+    <!-- Produces deterministic builds on CI servers. -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
+  </PropertyGroup>
+
+</Project>
