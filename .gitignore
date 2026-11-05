@@ -1,0 +1,143 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# =====================================================================
+# Temel .gitignore
+# .NET, Java (Maven/Gradle), Python (uv), Docker ve IDE dosyalari
+# Projede kullanilmayan bolumleri silebilirsin.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# Gizli bilgiler (her projede)
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+secrets.json
+appsettings.*.local.json
+
+# ---------------------------------------------------------------------
+# Isletim sistemi
+# ---------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------------------------------------------------------------------
+# Editor ve IDE
+# ---------------------------------------------------------------------
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains (Rider, IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code (paylasilacak ayarlar haric)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ---------------------------------------------------------------------
+# .NET
+# ---------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+artifacts/
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+
+# Test sonuclari ve kapsam raporlari
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# Yayin ciktilari
+publish/
+*.[Pp]ublish.xml
+*.pubxml.user
+PublishScripts/
+
+# ---------------------------------------------------------------------
+# Java (Maven / Gradle)
+# ---------------------------------------------------------------------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+hs_err_pid*.log
+replay_pid*.log
+
+# ---------------------------------------------------------------------
+# Python (uv)
+# ---------------------------------------------------------------------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+dist/
+
+# ---------------------------------------------------------------------
+# Veri ve modeller (buyuk dosyalar depoya girmez)
+# Basindaki / sadece proje kokundeki klasoru kapsar; .NET projelerindeki
+# Models/ (DTO, varlik) klasorleri etkilenmez.
+# ---------------------------------------------------------------------
+/data/raw/
+/data/processed/
+/models/
+*.onnx
+*.pt
+*.pth
+
+# ---------------------------------------------------------------------
+# Docker ve yerel calisma dosyalari
+# ---------------------------------------------------------------------
+docker-compose.override.yml
+*.local.yml
+tmp/
+temp/
