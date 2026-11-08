@@ -23,5 +23,17 @@
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Correlation\" />
+	  <Folder Include="DependencyInjection\" />
+	  <Folder Include="Entities\" />
+	  <Folder Include="Enums\" />
+	  <Folder Include="ExceptionHandling\" />
+	  <Folder Include="HttpClients\" />
+	  <Folder Include="Logging\" />
+	  <Folder Include="Bus\" />
+	  <Folder Include="Models\Response\" />
+	  <Folder Include="Models\Request\" />
+	</ItemGroup>
 
 </Project>
